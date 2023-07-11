@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lilita+One&family=Lobster&display=swap');
+body{
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+}
+.nav{
+    position: fixed;
+    z-index: 10000;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+ }
+
+.wallpaper{
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+
+.wall{
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    
+}
+
+#myDIV1 {
+    margin: auto;
+    border: 1px solid black;
+    width: 35%;
+    height: 20%;
+    background-color: rgb(44, 38, 36);
+    color: white;
+    animation: mymove1 5s infinite;
+    border-radius:10cm;
+    box-shadow: 10px 10px 5px 0px rgba(0,255,76,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,255,76,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,255,76,0.75);
+    border: 4px solid yellow;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+
+}
+@keyframes mymove1 {
+    100% {transform: rotate(-360deg);}
+}
+#myDIV1:hover {
+    animation: none;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: example 5s infinite;
+    border-radius: 3cm;
+  }
+  
+  @keyframes example {
+    0%  {background-color:yellow; left:20%; top:0%;}
+    12%  {background-color:blue; left:20%; top:20%;}
+    16% {background-color:red; left:40%; top:20%;}
+    20%  {background-color:red; left:40%; top:0%;}
+    24%  {background-color:yellow; left:60%; top:0%;}
+    28%  {background-color:blue; left:60%; top:20%;}
+    32%  {background-color:blue; left:80%; top:20%;}
+    36%  {background-color:blue; left:80%; top:0%;}
+    52%  {background-color:blue; left:80%; top:0%;}
+    56%  {background-color:blue; left:80%; top:20%;}
+    60%  {background-color:blue; left:60%; top:20%;}
+    64%  {background-color:yellow; left:60%; top:0%;}
+    68%  {background-color:red; left:40%; top:0%;}
+    72% {background-color:red; left:40%; top:20%;}
+    76%  {background-color:green; left:20%; top:20%;}
+    100%  {background-color:blue; left:20%; top:0%;}
+  }
+
+
+ .wallpaper h1{
+    position: inherit;
+    top: 40%;
+    text-align: center;
+    color: rgb(26, 255, 0);
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    text-shadow: 4px 3px 12px rgb(238, 255, 0);
+ }
+
+ @media screen and (max-width: 700px) {
+    .wallpaper{
+        height: 80vh;
+        width: 100%;
+        z-index: 100;
+        position: relative;
+        
+    }
+    .circle {
+        display: none;
+    }
+    .wallpaper h1{
+        top: 20%;
+        font-size: 50px;
+    }
+    #mydiv {
+        width: auto;
+        height: auto;
+    }
+    #myDIV {
+        width: auto;
+        height: auto;
+    }
+    #myDIV1 {
+        width: auto;
+        height: auto;
+    }
+ }
+
+ h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 3px 12px rgb(255, 255, 255);
+ }
+.hvr:hover{
+    .mydiv,.myDIV,.myDIV1{
+        animation: none;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(31, 31, 31);
+}
+.footer h3{
+    color: rgb(89, 255, 0);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: greenyellow;
+}
+
+.wall:hover{
+    background-color: rgb(211, 255, 65);
+}
